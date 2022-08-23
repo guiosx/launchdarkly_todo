@@ -182,7 +182,7 @@ function App() {
 								You have no tasks
 							</Text>
 						)}
-						{EnableToDo
+						{EnableToDo //Feature flag to enable/disable the core feature.
 						? (<Button
 							onClick={() => {
 								setOpened(true);

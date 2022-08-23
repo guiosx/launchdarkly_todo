@@ -17,6 +17,7 @@ Please follow the steps below to run the implementation locally as no live demo 
  - Access the <a href="app.launchdarkly.com">**LaunchDarkly Dashboard**</a> and generate a new Client-side ID. 
  - On VSCode, open the App.js located in the folder "src", look for "clientSideID" and replace the value with the newly created ID.
  - On LD Dashboard, navigate to **Feature Flags** and select **Create Flag**. The key should be named as **EnableToDo** (note: this value is case-sensitive).
+ Make sure to allow “SDKs using Client-side ID” under Client-Side availability when creating the Feature Flag. 
  - Open a new terminal and run the command `yarn && yarn start`. The required dependencies will be fetched and the application will open up shortly in your default browser.
  Alternatively, you can run `yarn`to download the dependencies followed by `npm start` to start the application.
  - You are all set! Turn on the **Enable To Do** flag to roll-out the new feature. The New Task button should be available instantly. To roll-back turn off the flag.
